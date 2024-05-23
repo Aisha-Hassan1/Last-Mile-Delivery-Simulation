@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin-top: 3%;
+}
+
+#logo {
+    width: 5%;
+    height: 5%
+}
+
+.content {
+    margin-left: 4%;
+}
+
+.titel b {
+    color: #D8A533;
+    font-size: 300%
+}
+
+.row select {
+    border-radius: 5px;
+    color: #D8A533;
+    border-color: #509958;
+}
+
+.left-contain,
+.rigth-contain {
+    font-size: 130%;
+}
+
+.countent-stores-vehicles {
+    font-size: 50%;
+    align-items: center;
+    color: black;
+}
+
+.number-stores-vehicles {
+    border: 1px solid #509958;
+    border-radius: 5px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 18px
+}
+
+.minus-btn {
+    color: brown;
+    ;
+}
+
+.plus-btn {
+    color: #D8A533;
+}
+
+.minus-btn:hover,
+.plus-btn:hover {
+    background-color: azure;
+}
+
+.minus-btn:focus,
+.plus-btn:focus {
+    outline: none;
+}
+
+.minus-btn,
+.plus-btn {
+    cursor: pointer;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].yes:checked+span:before,
+[type="radio"].yes:checked+span:after {
+    border: 2px solid #509958;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].yes:checked+span:after {
+    background-color: #509958;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].no:checked+span:before,
+[type="radio"].no:checked+span:after {
+    border: 2px solid #a6267b
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].no:checked+span:after {
+    background-color: #a62651
+}
+
+.button:focus {
+    outline: none;
+    background-color: #509958
+}
+
+label {
+    font-size: .9rem;
+    color: #948d8d
+}
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=number]:not(.browser-default) {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #D8A533;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #509958;
+    -webkit-box-shadow: 0 1px 0 0 #509958;
+    box-shadow: 0 1px 0 0 #509958
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label {
+    color: #509958
+}
+
+input.valid:not([type]),
+input.valid:not([type]):focus,
+input.valid[type=text]:not(.browser-default),
+input.valid[type=text]:not(.browser-default):focus,
+input.valid[type=number]:not(.browser-default),
+input.valid[type=number]:not(.browser-default):focus {
+    border-bottom: 1px solid #D8A533;
+    -webkit-box-shadow: 0 1px 0 0 #D8A533;
+    box-shadow: 0 1px 0 0 #D8A533
+}
+
+.input-field>label {
+    color: #948d8d
+}
+
+.input-field {
+    color: #D8A533;
+}
+
+fieldset {
+    padding: 3%;
+    padding-bottom: 0%;
+    font-size: 125%;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #509958;
+}
+
+.legend-text,
+.fridge {
+    font-size: 100%;
+    color: #D8A533;
+}
+
+.radio-no {
+    color: brown;
+    font-weight: bold;
+}
+
+.radio-yes {
+    color: #509958;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #509958;
+}
+
+.button:hover {
+    font-size: 20px;
+    transition: all 0.3s ease;
+    /* تفعيل التحويل بشكل سلس على المؤثر */
+    opacity: 0.5;
+}
+
+.error,.error2,.error3{
+    color: #f00;
+    font-size: 80%;
+    font-weight: bold;
+}

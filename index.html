@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distribution of Orders</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--logo-->
+        <div class="row">
+            <div class="col s12">
+                <img src="img\Vector.png" class="responsive-img" id="logo">
+            </div>
+        </div>
+        <div class="content">
+            <!--titel-->
+            <div class="row">
+                <div class="titel">
+                    <b class="responsive">Register</b>
+                </div>
+            </div>
+            <form action="map.html">
+            <!--select-->
+            <div class="row">
+                <div class="col s12 m6 l6 left-contain">
+                    <label>Country</label>
+                    <select id="Country" onchange="nameCountry(this)" class="browser-default">
+                        <option  value="" disabled selected >Select Country</option>
+                    </select>
+                </div>
+                <div class="col s12 m6 l6 rigth-contain">
+                    <label>City</label>
+                    <select id="City" onchange="nameCity(this)" class="browser-default">
+                        <option  value="" disabled selected>Select City</option>
+                    </select>
+                </div>
+            </div>
+            <!--Number of Vic..sto-->
+            <div class="row" id="NumberOfVic">
+                <div class="col s12 m6 l6 left-contain" id="NumberOfVic">
+                    <div class="row">
+                        <div class="col s6 m6 l6 left-contain">
+                            <div class="text-nowrap bg-light border countent-stores-vehicles">
+                                Number of Stores
+                            </div>
+                        </div>
+                        <div class="col s6 m6 l6 left-contain">
+                            <div class="right number-stores-vehicles" id="numberOfStores">
+                                <a class="minus-btn" onclick="decrementStores()">-</a>
+                                <span class="counterStores">1</span>
+                                <a class="plus-btn" onclick="incrementStores()">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6 rigth-contain">
+                    <div class="row">
+                        <div class="col s6 m6 l6 rigth-contain">
+                            <div class="text-nowrap bg-light border countent-stores-vehicles">
+                                Number of Vehicles
+                            </div>
+                        </div>
+                        <div class="col s6 m6 l6 left-contain" id="numberOfVehicles">
+                            <div class="right number-stores-vehicles">
+                                <a class="minus-btn" onclick="decrementVehicles()">-</a>
+                                <span class="counterVehicles">1</span>
+                                <a class="plus-btn" onclick="incrementVehicles()">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Info of Vic-->
+            <div class="row total-div">
+                <div class="col s12 " id="Vehicles1">
+                    <fieldset id="infoOfVehicles1">
+                        <legend class="legend-text">Info of Vehicles(1)</legend>
+                        <div class="row">
+                            <div class="input-field col s12 m6 l6">
+                                
+                                <select id="typeOfVehicles1" class="browser-default">
+                                    <option  value="" disabled selected >Select Type of Vehicles </option>
+                                    <option  value="Car"  >Car</option>
+                                    <option  value="Bicycle">Bicycle</option>
+                                    <option  value="Motorbike">Motorbike</option>
+                                </select>
+                                
+                                <!-- <input placeholder="Private car [54321]" id="typeOfVehicles1" type="text" class="validate">
+                                <label for="typeOfVehicles1">Type</label> -->
+
+                            </div>
+                            <div class="input-field col s12 m6 l6 " id="divCapacity1">
+                                <input placeholder="300" id="numberOfOrder1" type="number" class="validate">
+                                <label for="numberOfOrder1">Capacity</label>
+                                <!-- <div class="input-field col s12 m6 l6">
+                                    <span>not test</span>
+                                </div> -->
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <label class="responsive fridge">Does the  Vehicles accept fridge?</label>
+                            </div>
+                            <div class="col s6 m3 l3">
+                                <label>
+                                    <input class="with-gap yes" name="typeFridge1" value="Yes" type="radio" onchange="checkfridge(this)"/>
+                                    <span class="radio-yes">Yes</span>
+                                </label>
+                            </div>
+                            <div class="col s6 m3 l3">
+                                <label>
+                                    <input class="with-gap no" name="typeFridge1" value="No" type="radio" checked onchange="checkfridge(this)"/>
+                                    <span class="radio-no">No</span>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <!--Button Star Smi-->
+            <div class="row">
+                <div class="col s12 center">
+                    <button class="btn btn-large waves-effect waves-light   button " type="submit" name="action" >
+                        Start Simulation
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+
+</body>
+
+</html>

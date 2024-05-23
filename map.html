@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Distribution of Orders</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="map.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {
+        height: 100%;
+        display: flex;
+    }
+
+    #sidebar {
+        flex-basis: 15rem;
+        flex-grow: 1;
+        padding: 1rem;
+        max-width: 30rem;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    #map {
+        flex-basis: 0;
+        flex-grow: 4;
+        height: 100%;
+    }
+
+    #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: "Roboto", "sans-serif";
+        line-height: 30px;
+        padding-left: 10px;
+    }
+
+    #floating-panel {
+        background-color: #fff;
+        border: 0;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+        margin: 10px;
+        padding: 0 0.5em;
+        font: 400 18px Roboto, Arial, sans-serif;
+        overflow: hidden;
+        padding: 5px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+        height: auto;
+    }
+
+    #map {
+        flex: auto;
+    }
+
+    #sidebar {
+        flex: 0 1 auto;
+        padding: 0;
+    }
+    #sidebar > div {
+        padding: 0.5rem;
+    }
+</style>
+</head>
+<body>
+    
+    <div id="floating-panel">
+    <strong>Start:</strong>
+    <select id="start">
+        
+    </select>
+    <br />
+    <strong>End:</strong>
+    <select id="end">
+        
+    </select>
+    <br />
+    <b>Mode of Travel: </b>
+    <select id="mode">
+        <option value="DRIVING">Driving</option>
+        <option value="WALKING">Walking</option>
+        <option value="BICYCLING">Bicycling</option>
+        <option value="TRANSIT">Transit</option>
+    </select>
+    </div>
+    <div id="container">
+    <div id="map"></div>
+    <div id="sidebar"></div>
+    </div>
+    <div style="display: none">
+    <div id="floating-panel">
+        <strong>Start:</strong>
+        <select id="start">
+            
+        </select>
+        <br />
+        <strong>End:</strong>
+        <select id="end">
+            
+        </select>
+    </div>
+    </div>
+    
+
+
+
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?libraries=&v=weekly"></script> -->
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "YOUR_API_KEY", v: "weekly"});</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqRmfbzi0SEuglZt0fBjrJvKfRXnQFpdM&callback=initMap&v=weekly"
+defer
+></script>
+
+</body>
+</html>

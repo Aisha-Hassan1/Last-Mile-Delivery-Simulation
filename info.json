@@ -1,0 +1,84 @@
+{"error": false,
+"msg": "countries and cities retrieved",
+"data":[
+    {
+        "iso2": "KW",
+        "iso3": "KWT",
+        "country": "Kuwait",
+        "cities": [
+            "Al Ahmadi" ,  
+            "Al Farwaniyah" ,
+            "As Salimiyah" 
+        ]
+    },
+    {
+        "iso2": "SA",
+        "iso3": "SAU",
+        "country": "Saudi Arabia",
+        "cities": [
+            "Mecca",
+            "Medina",
+            "Riyadh"
+        ]
+    },
+    {
+        "iso2": "BH",
+        "iso3": "BHR",
+        "country": "Bahrain",
+        "cities": [
+            "Al Muharraq",
+            "Manama",
+            "Riffa"
+        ]
+    },
+    {
+        "iso2": "AE",
+        "iso3": "ARE",
+        "country": "United Arab Emirates",
+        "cities": [
+            "Dubai",
+            "Sharjah",
+            "Abu Dhabi"
+        ]
+    },
+    {
+        "iso2": "QA",
+        "iso3": "QAT",
+        "country": "Qatar",
+        "cities": [
+            "Ad Dawhah",
+            "Umm Sa'id",
+            "Ar Rayyan"
+        ]
+    },
+    {
+        "iso2": "JO",
+        "iso3": "JOR",
+        "country": "Jordan",
+        "cities": [
+            "Amman",
+            "Aqaba",
+            "Adjlun"
+        ]
+    },
+    {
+        "iso2": "EG",
+        "iso3": "EGY",
+        "country": "Egypt",
+        "cities": [
+            "Alexandria",
+            "Assiut",
+            "Cairo"
+        ]
+    },
+    {
+        "iso2": "IQ",
+        "iso3": "IRQ",
+        "country": "Iraq",
+        "cities": [
+            "Baghdad",
+            "Amarah",
+            "Basrah"
+        ]
+    }
+]}
