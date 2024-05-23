@@ -20,7 +20,8 @@ This project simulates last-mile delivery using the Google Maps API to provide r
 - [Learn more in this tutorial](https://developers.google.com/maps/documentation/javascript/overview).
 
 ## Website Explainer Video
-[![Watch the video](video_link)
+[![Watch the video]Uploading Mile Delivery Simulation.mp4…
+
 
 ---
 
